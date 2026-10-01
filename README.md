@@ -110,6 +110,13 @@ llmlab benchmark --model Qwen/Qwen3-8B --prompt "Explain paged attention briefly
 Prints model load time, prompt tokens, mean output tokens, mean latency, mean output
 tokens/sec and GPU memory in use.
 
+## Decision-model experiments
+
+`src/llm_lab/inference/decision/` holds a separate line of experiments on System-One
+decision models (`laya`) -- support ticket triage and an agent action guard. It shares
+this repo but not the vLLM engine above, and is not covered by the test suite. See
+[its README](src/llm_lab/inference/decision/README.md) for the scripts and findings.
+
 ## Tests
 
 ```bash
